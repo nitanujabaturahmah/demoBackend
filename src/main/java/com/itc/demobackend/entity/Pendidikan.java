@@ -29,4 +29,10 @@ public class Pendidikan {
     private String status;
 
     private String nis;
+
+    @OneToOne(fetch = FetchType.LAZY, optional = false)
+    @JoinColumn(name = "calon_siswa_id",
+            nullable = false,
+            foreignKey = @ForeignKey(name = "calon_siswa_id_fk"))
+    private CalonSiswa calonSiswa;
 }
