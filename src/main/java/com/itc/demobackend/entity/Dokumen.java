@@ -18,4 +18,5 @@ public class Dokumen {
     private String akteLahir;
 
     private String pasFoto;
+
 }

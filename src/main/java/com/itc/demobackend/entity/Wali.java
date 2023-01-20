@@ -17,6 +17,7 @@ public class Wali {
 
     private String tahunLahir;
 
+    @Enumerated(EnumType.STRING)
     private PendidikanTerakhir pendidikanTerakhir;
 
     private String Pekerjaan;

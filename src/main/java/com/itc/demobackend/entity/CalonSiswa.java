@@ -22,4 +22,13 @@ public class CalonSiswa {
     private String password;
 
     private String email;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "calonSiswa")
+    private Rincian rincianCalonSiswa;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "calonSiswa")
+    private Peserta peserta;
+
+    @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "calonSiswa")
+    private Orangtua orangtua;
 }

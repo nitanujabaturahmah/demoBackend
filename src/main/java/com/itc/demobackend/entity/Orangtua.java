@@ -18,6 +18,8 @@ public class Orangtua {
 
     private String tahunLahirAyah;
 
+
+    @Enumerated(EnumType.STRING)
     private PendidikanTerakhir pendidikanTerakhirAyah;
 
     private String pekerjaanAyah;
@@ -28,6 +30,7 @@ public class Orangtua {
 
     private String tahunLahirIbu;
 
+    @Enumerated(EnumType.STRING)
     private PendidikanTerakhir pendidikanTerakhirIbu;
 
     private String pekerjaanIbu;
