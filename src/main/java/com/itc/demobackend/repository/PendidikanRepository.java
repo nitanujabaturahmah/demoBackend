@@ -8,9 +8,4 @@ import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 
 public interface PendidikanRepository extends JpaRepository<Pendidikan, Long> {
-//    Optional<Pendidikan> findBySecureId (String secureId);
-//
-//    Page<Pendidikan> findByNisnLikeIgnoreCase(String pendidikan, Pageable pageable);
-//
-//    Optional<Pendidikan> findById (Long id);
 }
