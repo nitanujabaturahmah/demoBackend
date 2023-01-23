@@ -23,7 +23,7 @@ public class Rincian {
     private String jumlahSaudara;
 
     @OneToOne(fetch = FetchType.LAZY, optional = false)
-    @JoinColumn(name = "calon_siswa_id", referencedColumnName = "secure_id",
+    @JoinColumn(name = "calon_siswa_id",
             nullable = false,
             foreignKey = @ForeignKey(name = "calon_siswa_id_fk"))
     private CalonSiswa calonSiswa;

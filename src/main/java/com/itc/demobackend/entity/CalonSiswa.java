@@ -23,8 +23,9 @@ public class CalonSiswa {
 
     private String email;
 
+
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "calonSiswa")
-    private Rincian rincianCalonSiswa;
+    private Rincian rincian;
 
     @OneToOne(fetch = FetchType.LAZY, cascade = CascadeType.ALL, mappedBy = "calonSiswa")
     private Peserta peserta;
